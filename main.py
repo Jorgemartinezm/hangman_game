@@ -15,7 +15,6 @@ def normalize(s):
 
 
 def run():
-# Este bloque de código se encarga de elegir una palabra aleatoria
     with open("./data.txt", "r", encoding="UTF-8") as f:
         lista_pal = list(f)
     palabras = random.choice(lista_pal)
@@ -23,7 +22,6 @@ def run():
     palabra = list(palabras.upper())
     palabra.pop(-1)
 
-# Este bloque de código se encarga de contar los caracteres
     caracteres = len(palabra)
     aciertos = 0
     caracteres_puestos = []
@@ -32,8 +30,6 @@ def run():
     for i in range(len(palabra)):
         rayas.append("_")
     print(rayas)
-
-# Este bloque de código de encarga de
 
     os.system("clear")
 
